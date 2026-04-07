@@ -23,3 +23,9 @@ Following is the Algorithm:
 10. Whenever N queens are successfully placed, store the current configuration as a valid solution.
 11. Continue the search to explore all possible placements.
 12. After all configurations have been explored, output all stored solutions and the total number of solutions.
+
+**IMPORTANT:** the array board[N], which stores the current combination, stores the values of row and column of a square as follows:
+
+(Assume N = 8 and V = Value) board[8] = {V0, V1, V2, V3, V4, V5, V6, V7} One of the valid combinations of placing 8 quens on a 8x8 chessboard is [(1,4) (2,2) (3,7) (4,3) (5,6) (6,8) (7,5) (8,1)]. This combination will be stored in the array board[8] as: 
+board[8] = {4, 2, 7, 3, 6, 8, 5, 1}. That is,
+**The array index is the row number and the index value shows the column number.**
